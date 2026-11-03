@@ -43,7 +43,7 @@ export function verifierReleve(saisie, releves) {
   if (!estDateValide(saisie.date)) {
     erreurs.push("La date doit exister, au format AAAA-MM-JJ.");
   }
-  
+
   const temperature = versNombre(saisie.temperatureC);
    if (Number.isNaN(temperature)) {
     erreurs.push("La température doit être un nombre (en °C).");
@@ -65,11 +65,25 @@ export function verifierReleve(saisie, releves) {
 
 // Fabrique le relevé à enregistrer à partir d'une saisie VALIDE : les trois mesures deviennent des nombres.
 export function creerReleve(saisie) {
-  throw new Error('TODO : coder creerReleve dans src/registre.js');
-}
+  return {
+    id: saisie.id,
+    date: saisie.date,
+    temperatureC: versNombre(saisie.temperatureC),
+    pluieMm: versNombre(saisie.pluieMm),
+    humiditeAirPct: versNombre(saisie.humiditeAirPct),
+  };
+};
 
 // Ajoute la saisie au journal si elle est valide (verifierReleve, puis creerReleve).
 // Renvoie les erreurs : [] si le relevé a été ajouté ; sinon les messages, et rien n'est ajouté.
 export function ajouterReleve(releves, saisie) {
-  throw new Error('TODO : coder ajouterReleve dans src/registre.js');
-}
+  const erreurs = verifierReleve(saisie, releves);
+
+  if (erreurs.length > 0) {
+    return erreurs;
+  }
+
+  releves.push(creerReleve(saisie));
+  return [];
+};
+
