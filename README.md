@@ -4,7 +4,7 @@
 
 ## Contexte
 
-✏️ *En trois à cinq phrases : qui utilise l'outil, quel problème il résout, ce qu'il ne permet pas de conclure.*
+le responsable de la ferme pédagogique rassemble des relevés météo ( température , pluie , humidité de l'air) pour comprendre les conditions rencontrées pendant les activités. l'outil permet de saisir un relevé , le retrouver , trier la serie et la resumer, chaque relevé décrit la météo d'une journée ; dix jours forment une courte serie , pas un climat ( 30 ans en général). l'humidité relative de l'air n'est pas celle du sol.
 
 ## Prérequis et lancement
 
@@ -23,9 +23,9 @@ Sous PowerShell, si `npm` est bloqué : `npm.cmd test`.
 
 ✏️ *Cochez seulement ce qui marche : `- [x]`.*
 
-- [ ] Données lues et enregistrées dans `donnees/releves.json`
-- [ ] Ajouter un relevé, saisies invalides refusées sans arrêter le programme
-- [ ] Lister les relevés, message si le journal est vide
+- [x] Données lues et enregistrées dans `donnees/releves.json`
+- [x] Ajouter un relevé, saisies invalides refusées sans arrêter le programme
+- [x] Lister les relevés, message si le journal est vide
 - [ ] Rechercher par identifiant ou par date ; journées pluvieuses (au moins 10 mm)
 - [ ] Trier par température ou par pluie
 - [ ] Synthèse : température moyenne, minimale et maximale de la série, cumul de pluie, journées pluvieuses
@@ -34,11 +34,14 @@ Sous PowerShell, si `npm` est bloqué : `npm.cmd test`.
 
 ## Données
 
-✏️ *Le fichier, le nombre de relevés, les champs (voir [docs/dictionnaire-donnees.md](docs/dictionnaire-donnees.md)), les unités. Rappelez qu'ils sont fictifs.*
+donnees/releves.json , 10 relevés du 2026-10-15 au 2026-10-24 , chaque relevés contient cinq champs ( id , date, temperatureC, pluieMm et humiditeAirPct) (voir [docs/dictionnaire-donnees.md](docs/dictionnaire-donnees.md)), les unités. Rappelez qu'ils sont fictifs.*
 
 ## Limites
 
-✏️ *Au moins trois. Par exemple : dix jours de relevés forment une courte série, ils ne décrivent pas le climat de la région.*
+- Dix jours de relevés forment une courte série : ils ne décrivent pas le climat de la région (qui demande 30 ans de données).
+- L'humidité mesurée est celle de l'air, pas celle du sol : elle ne dit pas si les cultures ont besoin d'eau.
+- Les données sont fictives et viennent d'un seul point de mesure : on ne peut pas en tirer de conclusion pour une parcelle réelle.
+- Il n'y a qu'un relevé par jour : on ne voit ni les pics de chaleur, ni la répartition de la pluie dans la journée.
 
 ## Documents
 
@@ -46,4 +49,4 @@ Sous PowerShell, si `npm` est bloqué : `npm.cmd test`.
 
 ## Auteur
 
-✏️ *Prénom NOM, compte GitHub. Entraide : avec qui, sur quoi.*
+ kokobo paule, https://github.com/kokobopaule/brief-4-journal-meteo.git. Entraide : Coulibaly Salif, sur le calcul a la main dans la partie releve test.md

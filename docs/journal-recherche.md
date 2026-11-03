@@ -5,5 +5,5 @@
 | Ce que je cherchais | Où | Ce que j'ai compris | Utilisé dans |
 | comment convertir un text en tableau| claude.ai | readFile permet de lire le fichier et retourne une promesse resolue, le await attend que cette promesse soit resolue avant de passé a JSON.parse, JSON.parse convertit le texte en tableau , utf8 pour que readFile renvoi le texte et pas des octets bruts| stockage.js |
 | comment convertir un tableau en texte| claude.ai| stringify transforme le tableau en text et writeFile met ce texte dans le fichier| stockage.js|
-|  | | | |
+| je  | claude.ai| join (`\n`) assemble les lignes en un seul texte , un releve par ligne| registre.js|
 | ✏️ | | | |
