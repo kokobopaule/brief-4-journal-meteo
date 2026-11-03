@@ -10,6 +10,7 @@
 | pluieMm | pluie|nombre | >= 0|mm | 15|
 | humiditeAirPct| Humidité relative de l'air|nombre |entre 0 et 100 |% | 85|
 
-**Listes de valeurs autorisées** : 
+**Listes de valeurs autorisées** : Aucune liste fermée de valeurs.
+plages autorisées : temperatureC ( négatif , nul ou décimal accepté) ; pluieMn (nombre >= 0) ; humiditeAirPct ( nombre entre 0 et 100 , bornes comprises); date ( date existant au format AAAA-MM-JJ) ; id( text non vide , unique)
 
 **Sources** : SUJET.md, donnees/releves.json, fiche station
