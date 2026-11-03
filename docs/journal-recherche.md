@@ -9,3 +9,4 @@
 | la definition de filter |claude.ai| Elle parcourt chaque élément du tableau
 et applique la fonction fléchée (le test) , si elle renvoie true, l'élément est
 gardé, sinon il est ignoré | recherche.js |
+|definition de math.round | claude.ai | math.round arrondi un nombre a l'entier le plus proche| synthese.js|

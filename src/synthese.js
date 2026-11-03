@@ -5,7 +5,15 @@
 // Renvoie la moyenne des températures en °C, arrondie à une décimale, ou null si la liste est vide.
 // Exemples : 28 avec les données de départ · 27.7 pour 27, 26 et 30 °C (83 / 3 = 27.666…)
 export function moyenneTemperature(releves) {
-  throw new Error('TODO : coder moyenneTemperature dans src/synthese.js');
+  if (releves.length === 0) {
+    return null;
+    }
+    let somme = 0;
+    for (const releve of releves) {
+      somme = somme + releve.temperatureC;
+      }
+      const moyenne = somme / releves.length;
+      return Math.round(moyenne * 10) / 10;
 }
 
 // Renvoie le cumul (la somme) des pluies, en mm. Liste vide : 0.
