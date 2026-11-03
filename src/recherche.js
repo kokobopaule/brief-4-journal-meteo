@@ -24,5 +24,5 @@ export function trierParTemperature(releves) {
 // Renvoie une COPIE triée par pluie croissante, avec un comparateur numérique.
 // Deux relevés égaux gardent leur ordre d'origine. Le tableau reçu ne doit pas changer d'ordre.
 export function trierParPluie(releves) {
-  ;
+ return [...releves].sort ((a,b) => a.pluieMm - b.pluieMm );
 }
