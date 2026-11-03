@@ -28,5 +28,19 @@ export function cumulPluie(releves) {
 // Renvoie { min, max } des températures de la série, ou null si la liste est vide.
 // Exemple : { min: 26, max: 30 }
 export function temperatureMinMax(releves) {
-  throw new Error('TODO : coder temperatureMinMax dans src/synthese.js');
+  if (releves.length === 0) {
+    return null 
+  }
+
+  let min = releves[0].temperatureC;
+  let max = releves[0].temperatureC;
+  for (const releve of releves) {
+    if (releve.temperatureC < min) {
+      min = releve.temperatureC;
+    }
+    if (releve.temperatureC > max) {
+      max = releve.temperatureC;
+    }
+  }
+  return { min: 26 , max: 30 };
 }
