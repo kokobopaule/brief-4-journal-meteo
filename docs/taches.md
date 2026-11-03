@@ -7,7 +7,7 @@
 | Poste et dépôt prêts ; besoin compris ; documents commencés | jour 1 | 02/11/2026 |https://github.com/kokobopaule/brief-4-journal-meteo.git |
 | Fiche 2 : lire et écrire le JSON | jour 2| 03/11/2026| stockage.js|
 | Fiche 3 : ajouter et lister ; choix 1 et 2 ; erreurs |jour 2 | 03/11/2026 |registre.js |
-| Fiche 4 : rechercher et trier ; choix 3 et 4 |jour 2 | 03/11/2026 | recherche.js |
+| Fiche 4 : rechercher et trier ; choix 3 et 4 |jour 2 | 03/11/2026| recherche.js |
 | Fiche 5 : synthèse ; choix 5 | | | |
 | Tests par un camarade ; mes propres tests | | | |
 | Fiche agronomique ; README ; documents | | | |
