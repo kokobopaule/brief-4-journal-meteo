@@ -7,7 +7,7 @@ import { estDateValide, versNombre } from './outils.js';
 //            'M11 | 2026-10-25 | 27.5 °C | 4 mm | air 79 %' (JavaScript affiche un point décimal,
 //            même si la virgule est acceptée à la saisie)
 export function formaterReleve(releve) {
-  throw new Error('TODO : coder formaterReleve dans src/registre.js');
+ return `${releve.id} | ${releve.date} | ${releve.temperatureC} °C | ${releve.pluieMm} mm | air ${releve.humiditeAirPct} %`;
 }
 
 // Renvoie un texte avec un relevé par ligne (lignes séparées par '\n'),
@@ -19,7 +19,7 @@ export function listerReleves(releves) {
 // Renvoie le relevé qui a cet identifiant, ou undefined s'il n'existe pas.
 export function trouverParId(releves, id) {
   throw new Error('TODO : coder trouverParId dans src/registre.js');
-}
+} 
 
 // Contrôle une saisie AVANT de l'ajouter. Tous les champs arrivent sous forme de TEXTE :
 // { id: 'M11', date: '2026-10-25', temperatureC: '27,5', pluieMm: '4', humiditeAirPct: '79' }
