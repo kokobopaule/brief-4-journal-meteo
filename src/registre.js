@@ -14,14 +14,14 @@ export function formaterReleve(releve) {
 // ou 'Aucun relevé enregistré.' si la liste est vide.
 export function listerReleves(releves) {
   if (releves.length === 0){
-return 'Aucun releve enregistré';
+return 'Aucun relevé enregistré.';
 }
 const lignes = releves.map(formaterReleve);
  return lignes.join('\n');
 }
 // Renvoie le relevé qui a cet identifiant, ou undefined s'il n'existe pas.
 export function trouverParId(releves, id) {
-  throw new Error('TODO : coder trouverParId dans src/registre.js');
+    return releves.find((releve) => releve.id === id);
 } 
 
 // Contrôle une saisie AVANT de l'ajouter. Tous les champs arrivent sous forme de TEXTE :

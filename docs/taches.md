@@ -14,8 +14,12 @@
 | Dépôt cloné et lancé ailleurs ; démonstration répétée | | | |
 | Bonus | | | |
 
-**Blocages** (le message exact, ce que j'ai essayé, la solution) : ✏️
+Blocages
  le message : ✖ listerReleves écrit une ligne par relevé (0.0989ms)
   Error: TODO : coder listerReleves dans src/registre.js
   j'ai essayé : j'ai utilié map pour appeler formaterRelevé sur chaque relevé et join('\n') pour transformer le tableau lignes en une chaine de text et separer chaque ligne par un retour a la ligne
   la solution : ✔ listerReleves écrit une ligne par relevé (0.2002ms)
+  
+  le message : ✖ listerReleves affiche un message si le journal est vide (2.0751ms)
+  j'ai essayé : j'ai ajouté l'accent sur relevé parce que j'avais pas mis et j'ai ajouté un point final apres " enregistré "
+  solution  : ✔ listerReleves affiche un message si le journal est vide (0.1554ms)
