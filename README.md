@@ -26,9 +26,9 @@ Sous PowerShell, si `npm` est bloqué : `npm.cmd test`.
 - [x] Données lues et enregistrées dans `donnees/releves.json`
 - [x] Ajouter un relevé, saisies invalides refusées sans arrêter le programme
 - [x] Lister les relevés, message si le journal est vide
-- [ ] Rechercher par identifiant ou par date ; journées pluvieuses (au moins 10 mm)
-- [ ] Trier par température ou par pluie
-- [ ] Synthèse : température moyenne, minimale et maximale de la série, cumul de pluie, journées pluvieuses
+- [x] Rechercher par identifiant ou par date ; journées pluvieuses (au moins 10 mm)
+- [x] Trier par température ou par pluie
+- [x] Synthèse : température moyenne, minimale et maximale de la série, cumul de pluie, journées pluvieuses
 - [ ] Bonus : supprimer et modifier un relevé (choix 6 et 7)
 - [ ] Bonus : tri par température décroissante, journée la plus chaude
 
@@ -49,4 +49,4 @@ donnees/releves.json , 10 relevés du 2026-10-15 au 2026-10-24 , chaque relevés
 
 ## Auteur
 
- kokobo paule, https://github.com/kokobopaule/brief-4-journal-meteo.git. Entraide : Coulibaly Salif, sur le calcul a la main dans la partie releve test.md
+ kokobo paule, https://github.com/kokobopaule/brief-4-journal-meteo.git. Entraide : Coulibaly Salif, sur le calcul à la main dans la partie releve test.md

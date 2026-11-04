@@ -14,7 +14,7 @@ export function trouverParDate(releves, date) {
 export function joursPluvieux(releves,seuil) {
  return releves.filter((releve) => releve.pluieMm >= seuil);
 }
-
+    
 // Renvoie une COPIE triée par température croissante, avec un comparateur numérique.
 // Deux relevés égaux gardent leur ordre d'origine. Le tableau reçu ne doit pas changer d'ordre.
 export function trierParTemperature(releves) {
