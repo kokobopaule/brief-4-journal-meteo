@@ -14,7 +14,7 @@ export function formaterReleve(releve) {
 // ou 'Aucun relevé enregistré.' si la liste est vide.
 export function listerReleves(releves) {
   if (releves.length === 0){
-return 'Aucun relevé enregistré.';
+return 'Aucun relevé enregistré.';   
 }
 const lignes = releves.map(formaterReleve);
  return lignes.join('\n');

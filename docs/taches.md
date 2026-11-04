@@ -9,10 +9,10 @@
 | Fiche 3 : ajouter et lister ; choix 1 et 2 ; erreurs |jour 3 | 04/11/2026 |npm run test:registre : 13 verts + choix 1 et 2 testés dans le menu |
 | Fiche 4 : rechercher et trier ; choix 3 et 4 |jour 3| 04/11/2026 | 6 verts + choix 3 et 4 testés |
 | Fiche 5 : synthèse ; choix 5 | jour 3| 04/11/2026 | 5 verts + choix 5 testé|
-| Tests par un camarade ; mes propres tests | | | |
-| Fiche agronomique ; README ; documents |jour 2 ||fiche-agronomique.md , README.md |
-| Dépôt cloné et lancé ailleurs ; démonstration répétée | | | |
-| Bonus | | | |
+| Tests par un camarade ; mes propres tests |jour 3 | 04/11/2026 |npm run test : stockage , npm run test:registre , npm run test:recherche, npm run test:synthese |
+| Fiche agronomique ; README ; documents |jour 2 |03/11/2026|fiche-agronomique.md , README.md |
+| Dépôt cloné et lancé ailleurs ; démonstration répétée |jour 2 | 03/11/2026 |https://github.com/kokobopaule/brief-4-journal-meteo.git |
+| Bonus | x | x | x |
 
 ***Blocages***
  1.le message : `Error: TODO : coder listerReleves dans src/registre.js`
