@@ -49,4 +49,4 @@ donnees/releves.json , 10 relevés du 2026-10-15 au 2026-10-24 , chaque relevés
 
 ## Auteur
 
- kokobo paule, https://github.com/kokobopaule/brief-4-journal-meteo.git. Entraide : Coulibaly Salif, sur le calcul à la main dans la partie releve test.md
+ kokobo paule, https://github.com/kokobopaule/brief-4-journal-meteo.git. Entraide : Coulibaly Salif, sur le calcul àu la main dans la partie releve test.md
